@@ -1,5 +1,15 @@
 # ResNet-9 Models for Insect Wingbeat Sound Classification
 
+## Getting Started
+### Environment Requirements
+
+First, please make sure you have installed Conda. Then, our environment can be installed by:
+```
+conda create -n insect_classification python=3.8
+conda activate insect_classification
+pip install -r requirements.txt
+```
+
 ### Data Preparation
 
 You can obtain all the three datasets from [Google Drive](https://drive.google.com/drive/folders/1kt94eoQ4LKunu0DCHxmZfUbXmmrlpdK2?usp=sharing).
