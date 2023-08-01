@@ -141,7 +141,7 @@ valid_dataset = TensorDataset(valid_input, valid_target)
 train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=TRAIN_BATCH_SIZE, shuffle=False)
 valid_loader = torch.utils.data.DataLoader(valid_dataset, batch_size=VALID_BATCH_SIZE, shuffle=False)
 
-# Creating the model
+# Trainings
 for sim_num in range(0,5):
     if args.model == "small":
         model = ResNet9_small(out_features=OUT_FEATURES)
@@ -192,7 +192,7 @@ for sim_num in range(0,5):
     valid_losses = []
     valid_indices = []
 
-    # Training the model
+    # Training the `sim_num`-th model
     for epoch in range(EPOCHS):
 
         start_time = default_timer()
@@ -225,7 +225,7 @@ for sim_num in range(0,5):
 
             end_time = default_timer()
 
-
+            # Evaluating the model
             if (batch_id+1)%args.eval_freq==0:
 
                 valid_indices_temp.append(batch_id+1)
