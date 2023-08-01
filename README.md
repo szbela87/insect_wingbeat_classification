@@ -17,9 +17,9 @@ You can obtain all the three datasets from [Google Drive](https://drive.google.c
 ```
 mkdir data
 ```
-**Please put them in the `./data` directory**
+**Please put them in the `./data` directory.**
 
-**Also copy the `evaluation.py`, `train_mgpu.py` and `functions.py` files in the corresponding directory**
+**Also copy the `evaluation.py`, `train_mgpu.py` and `functions.py` files in the corresponding directory.**
 
 ### Training Example
 In the different directories, we provide the training scripts, i.e. for the *Wingbeats* dataset and the large *ResNet9* model can be found
