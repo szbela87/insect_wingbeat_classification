@@ -47,7 +47,7 @@ else:
     print("Please, choose between 'Abuzz' or 'Wingbeats' or 'FruitFlies'.")
     exit()
 if args.model != "small" and args.model != "large":
-	print("Please, choose between the 'small' or 'large' models")
+    print("Please, choose between the 'small' or 'large' models")
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
