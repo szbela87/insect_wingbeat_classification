@@ -2,4 +2,10 @@ numpy
 matplotlib
 pandas
 scikit-learn
+jinja2
+requests
+seaborn
+librosa
+seaborn
+soundfile
 torch==1.9.0

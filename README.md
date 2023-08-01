@@ -19,13 +19,16 @@ mkdir data
 ```
 **Please put them in the `./data` directory**
 
-**Also put the `evaluation.py` and `train_mgpu.py` files in the corresponding directory**
+**Also copy the `evaluation.py`, `train_mgpu.py` and `functions.py` files in the corresponding directory**
 
 ### Training Example
 In the different directories, we provide the training scripts, i.e. for the *Wingbeats* dataset and the large *ResNet9* model can be found
 at `./wingbeats_large`. Each training script produces 5 training sessions.
 
-To train the model use the command `./train_wingbeats_large.sh` command. 
+To train the model use the command 
+```
+./train_wingbeats_large.sh
+```
 
 The output files, i.e. the best models and logs are in the `./wingbeats_large/results` directory after the training, these are:
 * `best_model_{i}.pt` - the model with best validation accuracy from the i-th training,
@@ -35,7 +38,11 @@ The output files, i.e. the best models and logs are in the `./wingbeats_large/re
 
 Here, $i=0...4$.
 
-To evaluate these results, and evaluate the `best_model_{i}`, $i=0...4$ models on the test set use the `./evaluation_wingbeats_large.sh` command. It requires the files
+To evaluate these results, and evaluate the `best_model_{i}`, $i=0...4$ models on the test set use the following command:
+```
+./evaluation_wingbeats_large.sh
+``` 
+It requires the files
 `best_model_{i}.pt`, `inrun_results_{i}.csv`, `train_results_{i}.csv`, `valid_results_{i}.csv` for $i=0...4$ from the `results` directory and
 creates the `results.dat` file which contains evaluation metrics achieved by the model with the highest validation accuracy. 
 It also creates the confusion matrix corresponding the model with the highest validation accuracy,
