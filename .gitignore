@@ -7,3 +7,4 @@
 *.eps
 *.png
 __pycache__
+*.pyc
