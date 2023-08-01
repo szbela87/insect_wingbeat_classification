@@ -8,3 +8,5 @@
 *.png
 __pycache__
 *.pyc
+*.xlsx
+*.xls
