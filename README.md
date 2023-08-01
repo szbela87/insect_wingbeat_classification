@@ -21,10 +21,11 @@ The output files, i.e. the best models and logs are in the `./wingbeats_large/re
 * `best_model_{i}.pt` - the model with best validation accuracy from the i-th training,
 * `inrun_results_{i}.csv` - the results during the training by the i-th training (just for logging),
 * `train_results_{i}.csv` - the training results corresponding to the i-th training process,
-* `valid_results_{i}.csv` - the validation results corresponding to the i-th training process,
+* `valid_results_{i}.csv` - the validation results corresponding to the i-th training process.
+
 Here, $i=0...4$
 
-To evaluate these results, and evaluate these `best_model_{i}`, $i=0...4$ models on the test set use the `./evaluation_wingbeats_large.sh` command. It requires the files
+To evaluate these results, and evaluate the `best_model_{i}`, $i=0...4$ models on the test set use the `./evaluation_wingbeats_large.sh` command. It requires the files
 `best_model_{i}.pt`, `inrun_results_{i}.csv`, `train_results_{i}.csv`, `valid_results_{i}.csv` for $i=0...4$ from the `results` directory and
 creates the `results.dat` file which contains evaluation metrics achieved by the model with the highest validation accuracy. 
 It also creates the confusion matrix corresponding the model with the highest validation accuracy,
@@ -33,5 +34,6 @@ and makes plots about the accuracies and the losses in `.svg` format among the 5
 ### Best Models
 
 The best models and all the results are available at...
+
 
  
