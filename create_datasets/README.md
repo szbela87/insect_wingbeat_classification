@@ -6,7 +6,7 @@ Below is a description of how to create these files.
 ## The *Wingbeats* and the *Abuzz* datasets
 
 For these datasets we have investigated the same training/testing sets splitting as in the article [^fn1].
-The github code repository of this work is available at https://github.com/xutong30/WbNet-ResNet-Attention.
+The github code repository of the mentioned work is available at https://github.com/xutong30/WbNet-ResNet-Attention.
 The `create_data_abuzz.py` and the `create_data_wingbeats.py` scripts creates numpy files for the training and the test sets.
 
 Therefore, we used the following csv files.
@@ -26,6 +26,10 @@ To create the `train_abuzz.npy` and the `test_abuzz.npy` files just type the fol
 ```
 ./create_data_abuzz.py
 ```
+
+## The *Fruitflies* dataset
+
+The original *Fruitflies* dataset can be downloaded from [timeseriesclassification.com](http://www.timeseriesclassification.com/description.php?Dataset=FruitFlies).
 
 [^fn1]: Wei, X., Hossain, M.Z. & Ahmed, K.A. A ResNet attention model for classifying mosquitoes from wing-beating sounds. Sci Rep 12, 10334 (2022). https://doi.org/10.1038/s41598-022-14372-x
 
