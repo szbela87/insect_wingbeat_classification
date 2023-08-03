@@ -1,7 +1,7 @@
 import os
-import soundfile as sf
-import librosa
-import seaborn as sn
+#import soundfile as sf
+#import librosa
+#import seaborn as sn
 from scipy import signal
 import numpy as np
 import torch
@@ -78,18 +78,26 @@ def get_data(target_names,files):
         line = df.iloc[i]
         target = line["target"]
         filename = line["Fname"].replace("\\","/")
+        print(f"#{num+1} | {filename}")
         try:
-            data, fs = sf.read(filename)
+            #data1, fs = librosa.load(filename)
+            #data1, fs = sf.read(filename)
+            data, fs = librosa.load(filename,sr=8000) # not every file is in 8KHz
             X.append(data)
             y.append(targets[target])
-
+            #sprint(f"{data.shape} {filename} | {fs} | min: {np.min(data):.2f} | max: {np.max(data):.2f} | diff: {np.max(np.abs(abs(data1-data))):.2f}")
+            
             num += 1
+            #if num > 3:
+            #    break
         except:
             bad_files += 1
+            
     
     X = np.array(X).astype("float32")
     y = np.array(y).astype("int")
 
+    #print(target, '#recs = ', num)
     print("")
     print('# of classes: %d' % len(np.unique(y)))
     print('total dataset size: %d' % X.shape[0])

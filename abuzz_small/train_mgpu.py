@@ -35,6 +35,8 @@ parser.add_argument('--out_features',type=int,required=True)
 parser.add_argument('--train_batch_size',type=int,required=True)
 parser.add_argument('--valid_batch_size',type=int,required=True)
 parser.add_argument('--eval_freq',type=int,required=True)
+parser.add_argument('--kernel_size',type=int,required=True)
+parser.add_argument('--pool_size',type=int,required=True)
 args = parser.parse_args()
 if args.dataset == "Abuzz":
     print('Dataset: ', args.dataset)
@@ -144,9 +146,9 @@ valid_loader = torch.utils.data.DataLoader(valid_dataset, batch_size=VALID_BATCH
 # Trainings
 for sim_num in range(0,5):
     if args.model == "small":
-        model = ResNet9_small(out_features=OUT_FEATURES)
+        model = ResNet9_small(out_features=OUT_FEATURES,kernel_size=args.kernel_size,pool_size=args.pool_size)
     else:
-        model = ResNet9_large(out_features=OUT_FEATURES)
+        model = ResNet9_large(out_features=OUT_FEATURES,kernel_size=args.kernel_size,pool_size=args.pool_size)
     if len(dev_names)>1:
         model = torch.nn.DataParallel(model)
     model.to(device)

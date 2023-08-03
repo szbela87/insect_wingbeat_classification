@@ -30,6 +30,8 @@ parser.add_argument('--dataset', type=str, required=True)
 parser.add_argument('--model', type=str, required=True)
 parser.add_argument('--test_split_ratio', type=float, required=True)
 parser.add_argument('--batch_size', type=int, required=True)
+parser.add_argument('--kernel_size', type=int, required=True)
+parser.add_argument('--pool_size', type=int, required=True)
 args = parser.parse_args()
 if args.dataset == "Abuzz":
     print('Dataset: ', args.dataset)
@@ -253,9 +255,9 @@ IND = np.argmax(df_new[[f"valid_acc_{i}" for i in range(5)]].max(axis=0).values)
 out_features = len(target_names)
 
 if args.model == "small":
-    model = ResNet9_small(out_features=out_features)
+    model = ResNet9_small(out_features=out_features,kernel_size=args.kernel_size,pool_size=args.pool_size)
 else:
-    model = ResNet9_large(out_features=out_features)
+    model = ResNet9_large(out_features=out_features,kernel_size=args.kernel_size,pool_size=args.pool_size)
 state_dict = torch.load(f"{BEST_MODEL_FILENAME}_{IND}.pt")
 new_state_dict = {}
 for key in state_dict:
@@ -355,9 +357,9 @@ final_results = {"train_losses":[],"train_accuracies":[],
 f.close()
 for ind in range(5):
     if args.model == "small":
-        model = ResNet9_small(out_features=out_features)
+        model = ResNet9_small(out_features=out_features,kernel_size=args.kernel_size,pool_size=args.pool_size)
     else:
-        model = ResNet9_large(out_features=out_features)
+        model = ResNet9_large(out_features=out_features,kernel_size=args.kernel_size,pool_size=args.pool_size)
     state_dict = torch.load(f"{BEST_MODEL_FILENAME}_{ind}.pt")
     new_state_dict = {}
     for key in state_dict:
