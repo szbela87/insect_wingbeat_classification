@@ -3,7 +3,7 @@
 The resulted data files can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1kt94eoQ4LKunu0DCHxmZfUbXmmrlpdK2?usp=sharing).
 Below is a description of how to create these files.
 
-### The *Wingbeats* and the *Abuzz* datasets
+## The *Wingbeats* and the *Abuzz* datasets
 
 For these datasets we have investigated the same training/testing sets splitting as in the article [^fn1].
 The github code repository of this work is available at https://github.com/xutong30/WbNet-ResNet-Attention.
@@ -20,7 +20,7 @@ or [Google Drive](https://drive.google.com/file/d/1qRiiPYCpaoAxv--o2EGcFoHeQPk3J
 This is a preprocessed version of the original dataset available at https://web.stanford.edu/group/prakash-lab/cgi-bin/mosquitofreq/the-science/data/.
 The processed dataset consists of 10 secs long audio signals. This preprocessing was done in the paper [^fn1].
 
-#### Example
+### Example
 
 To create the `train_abuzz.npy` and the `test_abuzz.npy` files just type the following command:
 ```
