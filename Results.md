@@ -13,6 +13,9 @@
 ### Small *ResNet9*
 ![image](pics/wb_small.png)
 
+### Large *ResNet9*
+![image](pics/wb_large.png)
+
 ## Abuzz 
 
 ### Small *ResNet9*
