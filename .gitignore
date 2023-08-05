@@ -5,7 +5,6 @@
 *.out
 *.svg
 *.eps
-*.png
 __pycache__
 *.pyc
 *.xlsx
