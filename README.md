@@ -61,8 +61,9 @@ and makes plots about the accuracies and the losses in `.svg` format among the 5
 ## Best Models
 
 The trained models are available at [Google Drive](https://drive.google.com/drive/folders/12iuqWp-M6j2zpe57sIWp4lV3N-LJynmD?usp=sharing).
+Further results can be seen in [Results.md](https://github.com/szbela87/insect_wingbeat_classification/blob/main/Results.md).
 
 ## About the datasets
 
-The description of how to generate the data files for the trainings and the tests can be found in the `create_datasets` directory.
+The description of how to generate the data files for the trainings and the tests can be found in the `create_datasets` directory, i. e. [./create_datasets/Readme.md](https://github.com/szbela87/insect_wingbeat_classification/blob/main/create_datasets/README.md)
  
