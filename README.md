@@ -30,6 +30,7 @@ at `./wingbeats_large`. These directories are:
 * `fruitflies_large`
 * `abuzz_small`
 * `abuzz_large`
+
 The `small`/`large` words in the folder names indicate that the small/large *ResNet9* models were used on the corresponding dataset.
 
 Each training script produces 5 training sessions.
