@@ -9,7 +9,7 @@ For these datasets we have investigated the same training/testing sets splitting
 The github code repository of the mentioned work is available at https://github.com/xutong30/WbNet-ResNet-Attention.
 The `create_data_abuzz.py` and the `create_data_wingbeats.py` scripts creates numpy files for the training and the test sets.
 
-Therefore, we used the following csv files.
+Therefore, the following csv files were used with the audio filenames.
 [Google Drive](https://drive.google.com/drive/folders/1uDbzjY38QrmuglkwKVyIlLYxNpAvMKZk?usp=sharing).
 
 The original *Wingbeats* dataset can be downloaded from [timeseriesclassification.com](http://www.timeseriesclassification.com/description.php?Dataset=MosquitoSound)

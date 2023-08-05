@@ -11,3 +11,4 @@ __pycache__
 *.xlsx
 *.xls
 *.xlsx#
+.~lock.eredmenyek.xlsx#
