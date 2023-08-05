@@ -50,7 +50,8 @@ and makes plots about the accuracies and the losses in `.svg` format among the 5
 
 ## Best Models
 
-The best models and all the results are available at...
+The trained models are available at [Google Drive](https://drive.google.com/drive/folders/12iuqWp-M6j2zpe57sIWp4lV3N-LJynmD?usp=sharing).
+The `small`/`large` words in the folder name indicates that the small/large *ResNet9* model was used.
 
 ## About the datasets
 
