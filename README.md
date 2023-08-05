@@ -23,7 +23,16 @@ mkdir data
 
 ### Training Example
 In the different directories, we provide the training scripts, i.e. for the *Wingbeats* dataset and the large *ResNet9* model can be found
-at `./wingbeats_large`. Each training script produces 5 training sessions.
+at `./wingbeats_large`. These directories are:
+* `wingbeats_small`
+* `wingbeats_large`
+* `fruitflies_small`
+* `fruitflies_large`
+* `abuzz_small`
+* `abuzz_large`
+The `small`/`large` words in the folder names indicate that the small/large *ResNet9* models were used on the corresponding dataset.
+
+Each training script produces 5 training sessions.
 
 To train the model use the command 
 ```
@@ -51,7 +60,6 @@ and makes plots about the accuracies and the losses in `.svg` format among the 5
 ## Best Models
 
 The trained models are available at [Google Drive](https://drive.google.com/drive/folders/12iuqWp-M6j2zpe57sIWp4lV3N-LJynmD?usp=sharing).
-The `small`/`large` words in the folder name indicates that the small/large *ResNet9* model was used.
 
 ## About the datasets
 
