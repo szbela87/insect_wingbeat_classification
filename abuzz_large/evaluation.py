@@ -127,7 +127,7 @@ df_new_train = df_new_train.reset_index()
 
 SMALL_SIZE = 15
 MEDIUM_SIZE = 22
-BIGGER_SIZE = 30
+BIGGER_SIZE = 22
 
 plt.rc('font', size=SMALL_SIZE)          # controls default text sizes
 plt.rc('axes', titlesize=BIGGER_SIZE)     # fontsize of the axes title
@@ -154,6 +154,7 @@ plt.xlabel("epoch",weight="bold")
 plt.ylabel("accuracy",weight="bold")
 plt.legend()
 plt.grid()
+plt.title(f"{args.dataset} dataset",fontsize=22,weight="bold")
 plt.show(block=False)
 fig.savefig('accuracies.svg', format='svg')
 
@@ -168,6 +169,7 @@ plt.xlabel("epoch",weight="bold")
 plt.ylabel("loss",weight="bold")
 plt.legend()
 plt.grid()
+plt.title(f"{args.dataset} dataset",fontsize=22,weight="bold")
 plt.show(block=False)
 fig.savefig('losses.svg', format='svg')
 #"""
