@@ -32,6 +32,7 @@ parser.add_argument('--test_split_ratio', type=float, required=True)
 parser.add_argument('--batch_size', type=int, required=True)
 parser.add_argument('--kernel_size', type=int, required=True)
 parser.add_argument('--pool_size', type=int, required=True)
+parser.add_argument('--modes', type=int, default=64, help='Modes in the Fourier layers')
 args = parser.parse_args()
 if args.dataset == "Abuzz":
     print('Dataset: ', args.dataset)
@@ -49,7 +50,9 @@ else:
     print("Please, choose between 'Abuzz' or 'Wingbeats' or 'FruitFlies'.")
     exit()
 if args.model != "small" and args.model != "large":
-    print("Please, choose between the 'small' or 'large' models")
+    print("Please, choose between the 'small'/'large' models")
+    exit()
+
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
