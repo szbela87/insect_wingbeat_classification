@@ -32,7 +32,6 @@ parser.add_argument('--test_split_ratio', type=float, required=True)
 parser.add_argument('--batch_size', type=int, required=True)
 parser.add_argument('--kernel_size', type=int, required=True)
 parser.add_argument('--pool_size', type=int, required=True)
-parser.add_argument('--modes', type=int, default=64, help='Modes in the Fourier layers')
 args = parser.parse_args()
 if args.dataset == "Abuzz":
     print('Dataset: ', args.dataset)
