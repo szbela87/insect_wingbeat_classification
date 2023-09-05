@@ -219,6 +219,7 @@ elif args.dataset == "Fruitflies":
     X_test = X_test.values
     y_test = X_test[:,-1].reshape(-1)
     y_test = y_test.astype(int)
+    X_test = X_test[:,:-1]
     
     target_names = ['Dr. melanogaster','Dr. suzukii','Zaprionus']
 
