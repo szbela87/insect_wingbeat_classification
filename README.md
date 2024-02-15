@@ -1,5 +1,8 @@
 # ResNet-9 Models for Insect Wingbeat Sound Classification
 
+This repository contains the code for the paper:
+- [A ResNet-9 Model for Insect Wingbeat Sound Classification](https://ieeexplore.ieee.org/document/10371871)
+
 ## Getting Started
 ### Environment Requirements
 
@@ -73,3 +76,16 @@ Further results can be seen in [Results.md](https://github.com/szbela87/insect_w
 
 The descriptions of how to generate the data files for the trainings and the tests can be found in the `create_datasets` directory, i. e. [./create_datasets/Readme.md](https://github.com/szbela87/insect_wingbeat_classification/blob/main/create_datasets/README.md)
  
+## Citations
+```
+@INPROCEEDINGS{10371871,
+  author={Szekeres, Béla J. and Natabara Gyöngyössy, Máté and Botzheim, János},
+  booktitle={2023 IEEE Symposium Series on Computational Intelligence (SSCI)}, 
+  title={A ResNet-9 Model for Insect Wingbeat Sound Classification}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={587-592},
+  keywords={Insects;Computational modeling;Computer architecture;Pest control;Data models;Spectrogram;Computational intelligence;Audio classification;ResNet architecture;Deep Learning;Mosquito Wingbeat},
+  doi={10.1109/SSCI52147.2023.10371871}}
+```
