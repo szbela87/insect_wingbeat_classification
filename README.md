@@ -77,6 +77,8 @@ Further results can be seen in [Results.md](https://github.com/szbela87/insect_w
 The descriptions of how to generate the data files for the trainings and the tests can be found in the `create_datasets` directory, i. e. [./create_datasets/Readme.md](https://github.com/szbela87/insect_wingbeat_classification/blob/main/create_datasets/README.md)
  
 ## Citations
+If you use this repository or the methods described here in your research, please cite the following paper:
+
 ```
 @INPROCEEDINGS{10371871,
   author={Szekeres, Béla J. and Natabara Gyöngyössy, Máté and Botzheim, János},
